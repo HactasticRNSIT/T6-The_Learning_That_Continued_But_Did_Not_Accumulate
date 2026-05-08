@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduVista</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Syne:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div id="cursor"></div>
+  <div id="cursor-trail"></div>
+
+  <div id="loader">
+    <div class="loader-logo">EduVista</div>
+    <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+    <div class="loader-text">Initializing AI Engine</div>
+  </div>
+
+  <canvas id="bg-canvas"></canvas>
+
+  <section id="hero">
+    <div class="hero-orb o1"></div>
+    <div class="hero-orb o2"></div>
+    <div class="hero-orb o3"></div>
+
+    <div class="float-cards">
+      <div class="fcard">
+        <div class="fcard-label">Retention Score</div>
+        <div class="fcard-val">94%</div>
+        <div class="fcard-sub">↑ 12% this week</div>
+        <div class="mini-ring">
+          <div class="ring r1"></div>
+          <div class="ring r2"></div>
+          <div class="ring r3"></div>
+        </div>
+      </div>
+      <div class="fcard">
+        <div class="fcard-label">AI Insights</div>
+        <div class="fcard-val">238</div>
+        <div class="fcard-sub">Active recommendations</div>
+        <div class="bar-wrap">
+          <div class="bar-row"><span class="bar-label">Math</span><div class="bar-track"><div class="bar-fill" style="width:78%;background:var(--cyan)"></div></div></div>
+          <div class="bar-row"><span class="bar-label">Science</span><div class="bar-track"><div class="bar-fill" style="width:62%;background:var(--purple)"></div></div></div>
+          <div class="bar-row"><span class="bar-label">English</span><div class="bar-track"><div class="bar-fill" style="width:91%;background:var(--blue)"></div></div></div>
+        </div>
+      </div>
+      <div class="fcard">
+        <div class="fcard-label">Study Streak</div>
+        <div class="fcard-val">🔥 21</div>
+        <div class="fcard-sub">Days in a row</div>
+        <div class="bar-wrap">
+          <div class="bar-row"><span class="bar-label">Goal</span><div class="bar-track"><div class="bar-fill" style="width:70%;background:linear-gradient(90deg,#ff6b35,#ff9d4d)"></div></div></div>
+        </div>
+      </div>
+      <div class="fcard">
+        <div class="fcard-label">Risk Alert</div>
+        <div class="fcard-val" style="color:#ff5b5b">3</div>
+        <div class="fcard-sub">Students need attention</div>
+        <div class="bar-wrap">
+          <div class="bar-row"><span class="bar-label">High</span><div class="bar-track"><div class="bar-fill" style="width:20%;background:#ff5b5b"></div></div></div>
+          <div class="bar-row"><span class="bar-label">Med</span><div class="bar-track"><div class="bar-fill" style="width:45%;background:#ffb347"></div></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="badge"><span class="badge-dot"></span>v2.0 · AI-Powered Education</div>
+    <h1 class="hero-title">EduVista</h1>
+    <div class="typing-wrap"><span id="typing-text"></span></div>
+    <p class="hero-sub">Track learning gaps, predict performance, and personalize education with AI-driven insights that adapt in real time.</p>
+
+    <div class="btn-row">
+      <a href="#portals" class="btn btn-primary">🚀 Get Started</a>
+      <a href="https://acume-learn.lovable.app/student" class="btn btn-glass">🎓 Student Portal</a>
+      <a href="https://acume-learn.lovable.app/teacher" class="btn btn-glass">👩‍🏫 Teacher Portal</a>
+    </div>
+
+    <div class="scroll-hint">
+      <div class="scroll-mouse"><div class="scroll-dot"></div></div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <section id="stats">
+    <div class="stats-grid reveal">
+      <div class="stat-card"><div class="stat-num">50K+</div><div class="stat-label">Students Tracked</div></div>
+      <div class="stat-card"><div class="stat-num">94%</div><div class="stat-label">Retention Rate</div></div>
+      <div class="stat-card"><div class="stat-num">2.4M</div><div class="stat-label">AI Insights Generated</div></div>
+      <div class="stat-card"><div class="stat-num">3.8×</div><div class="stat-label">Faster Improvement</div></div>
+    </div>
+  </section>
+
+  <section id="portals">
+    <div class="section-label reveal">Choose Your Path</div>
+    <h2 class="section-title reveal">Enter Your Portal</h2>
+    <p class="section-sub reveal">Two powerful gateways — one AI engine powering both.</p>
+
+    <div class="portal-grid">
+      <a href="https://acume-learn.lovable.app/student" class="pcard student reveal">
+        <div class="pcard-icon">🎓</div>
+        <div class="pcard-title">Student Portal</div>
+        <div class="pcard-desc">Your personalized learning companion. Know exactly where you stand and what to tackle next.</div>
+        <ul class="feat-list">
+          <li>Personalized learning paths</li>
+          <li>AI study planner & scheduling</li>
+          <li>Progress tracking & streaks</li>
+          <li>Gamified learning milestones</li>
+          <li>Smart topic recommendations</li>
+        </ul>
+        <div class="pcard-arrow">Enter portal →</div>
+      </a>
+      <a href="https://acume-learn.lovable.app/teacher" class="pcard teacher reveal">
+        <div class="pcard-icon">👩‍🏫</div>
+        <div class="pcard-title">Teacher Portal</div>
+        <div class="pcard-desc">Class-wide intelligence at your fingertips. Spot at-risk students before it's too late.</div>
+        <ul class="feat-list">
+          <li>Cohort-level analytics</li>
+          <li>AI-powered learning insights</li>
+          <li>Performance prediction engine</li>
+          <li>Auto-generated reports</li>
+          <li>Early warning & interventions</li>
+        </ul>
+        <div class="pcard-arrow">Enter portal →</div>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <span>EduVista</span> · AI Learning Retention Tracker · v2.0 Hackathon Edition
+  </footer>
+
+  <button id="fc-open-btn" onclick="openFlashcards()">
+    <div class="fc-btn-pulse"></div>
+    🃏 Flashcards
+  </button>
+
+  <div id="fc-portal">
+    <div class="fc-header">
+      <div class="fc-header-left">
+        <div class="fc-logo">EduVista</div>
+        <div class="fc-tab-bar">
+          <button class="fc-tab active" onclick="switchPortalTab('upload')">📤 Upload</button>
+          <button class="fc-tab" id="fc-cards-tab" onclick="switchPortalTab('cards')" style="display:none">🃏 Cards</button>
+        </div>
+      </div>
+      <button class="fc-close" onclick="closeFlashcards()">✕</button>
+    </div>
+
+    <div class="fc-body">
+      <div class="fc-screen visible" id="fc-upload-screen">
+        <div class="fc-upload-title">Generate Flashcards</div>
+        <p class="fc-upload-sub">Upload your notes or paste text below — AI will extract key concepts and craft question/answer pairs for you.</p>
+
+        <div class="fc-dropzone" id="fc-dropzone" onclick="document.getElementById('fc-file-input').click()">
+          <input type="file" id="fc-file-input" accept=".txt,.md" />
+          <div class="fc-dz-icon">📄</div>
+          <div class="fc-dz-title">Drag & drop your notes here</div>
+          <div class="fc-dz-sub">Supports <span>.txt</span> and <span>.md</span> files — or <span onclick="event.stopPropagation();document.getElementById('fc-file-input').click()">click to browse</span></div>
+          <div class="fc-dz-filename" id="fc-filename" style="display:none"></div>
+        </div>
+
+        <div class="fc-divider">OR PASTE TEXT</div>
+
+        <textarea class="fc-textarea" id="fc-text-input" placeholder="Paste your lecture notes, textbook excerpts, or study material here…"></textarea>
+
+        <div class="fc-config">
+          <div class="fc-config-group">
+            <label>Number of Cards</label>
+            <div class="fc-seg" id="fc-count-seg">
+              <button class="fc-seg-btn" data-val="5" onclick="selectSeg('fc-count-seg',this)">5</button>
+              <button class="fc-seg-btn sel" data-val="10" onclick="selectSeg('fc-count-seg',this)">10</button>
+              <button class="fc-seg-btn" data-val="15" onclick="selectSeg('fc-count-seg',this)">15</button>
+              <button class="fc-seg-btn" data-val="20" onclick="selectSeg('fc-count-seg',this)">20</button>
+            </div>
+          </div>
+          <div class="fc-config-group">
+            <label>Difficulty</label>
+            <div class="fc-seg" id="fc-diff-seg">
+              <button class="fc-seg-btn" data-val="Basic" onclick="selectSeg('fc-diff-seg',this)">Basic</button>
+              <button class="fc-seg-btn sel" data-val="Mixed" onclick="selectSeg('fc-diff-seg',this)">Mixed</button>
+              <button class="fc-seg-btn" data-val="Advanced" onclick="selectSeg('fc-diff-seg',this)">Advanced</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="fc-error" id="fc-error"></div>
+
+        <button class="fc-gen-btn" id="fc-gen-btn" onclick="generateCards()">
+          <div class="fc-spinner" id="fc-spinner"></div>
+          <span id="fc-gen-icon" class="fc-gen-icon">✨</span>
+          <span id="fc-gen-label">Generate Flashcards</span>
+        </button>
+      </div>
+
+      <div class="fc-screen" id="fc-cards-screen">
+        <div class="fc-deck-toolbar">
+          <div class="fc-deck-info">
+            <h2 id="fc-deck-title">Your Flashcards</h2>
+            <p id="fc-deck-sub"></p>
+          </div>
+          <div class="fc-deck-actions">
+            <div class="fc-view-toggle">
+              <button class="fc-vt-btn active" id="fc-vt-grid" onclick="setView('grid')" title="Grid View">⊞</button>
+              <button class="fc-vt-btn" id="fc-vt-study" onclick="setView('study')" title="Study Mode">▶</button>
+            </div>
+            <button class="fc-new-btn" onclick="newUpload()">↩ New Upload</button>
+          </div>
+        </div>
+
+        <div id="fc-grid-view">
+          <div class="fc-grid" id="fc-grid"></div>
+        </div>
+
+        <div id="fc-study-view">
+          <div class="fc-study-wrap">
+            <div class="fc-progress-bar-wrap">
+              <div class="fc-progress-bar" id="fc-progress-bar"></div>
+            </div>
+            <div class="fc-study-counter" id="fc-study-counter"></div>
+
+            <div class="fc-study-card-wrap" id="fc-study-card" onclick="flipStudyCard()">
+              <div class="fc-study-card-inner" id="fc-study-inner">
+                <div class="fc-study-face fc-study-front">
+                  <div class="fc-study-q-label">Question</div>
+                  <div class="fc-study-q-text" id="fc-study-q"></div>
+                  <div class="fc-study-flip-hint">Tap to reveal answer</div>
+                </div>
+                <div class="fc-study-face fc-study-back">
+                  <div class="fc-study-a-label">Answer</div>
+                  <div class="fc-study-a-text" id="fc-study-a"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="fc-study-nav">
+              <button class="fc-nav-btn" id="fc-prev-btn" onclick="studyNav(-1)">←</button>
+              <div class="fc-nav-pos" id="fc-nav-pos"></div>
+              <button class="fc-nav-btn" id="fc-next-btn" onclick="studyNav(1)">→</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
